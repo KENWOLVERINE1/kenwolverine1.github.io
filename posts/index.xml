@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Kenwolverine</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Thu, 01 May 2025 21:18:56 +0530</lastBuildDate>
     <atom:link href="https://kenwolverine.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Life calendar widget project log1</title>
+      <link>https://kenwolverine.github.io/posts/life_calendar_widget_project_log1/</link>
+      <pubDate>Thu, 01 May 2025 21:18:56 +0530</pubDate>
+      <guid>https://kenwolverine.github.io/posts/life_calendar_widget_project_log1/</guid>
+      <description>&lt;h1 id=&#34;learning-log-&#34;&gt;Learning log!:-&lt;/h1&gt;
+&lt;p&gt;As the name suggests this is where i will log the learnings and experiences that i have obtained during the journey of creating this wonderful project so that evenyone can access not only my project but also the learnings and experiences as well!!&lt;/p&gt;
+&lt;h2 id=&#34;log-1-&#34;&gt;log 1:-&lt;/h2&gt;
+&lt;h2 id=&#34;setting-up-the-project-&#34;&gt;Setting up the project:-&lt;/h2&gt;
+&lt;p&gt;I initially started the project by creating a directory under the name life-caledar-widget. I usually create a directory based on the project name in order to initialize it locally and in order to keep track of it&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
