@@ -6,8 +6,20 @@
     <description>Recent content in Posts on Kenwolverine</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 May 2025 21:18:56 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 03 May 2025 21:23:57 +0530</lastBuildDate>
     <atom:link href="https://kenwolverine1.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Life calendar widget log2</title>
+      <link>https://kenwolverine1.github.io/posts/life_calendar_widget_log2/</link>
+      <pubDate>Sat, 03 May 2025 21:23:57 +0530</pubDate>
+      <guid>https://kenwolverine1.github.io/posts/life_calendar_widget_log2/</guid>
+      <description>&lt;h2 id=&#34;log-2-&#34;&gt;log 2:-&lt;/h2&gt;
+&lt;h2 id=&#34;configuring-uiuser-interface-&#34;&gt;Configuring UI(User Interface):-&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The User Interface in electron works just like any other websites but in a more traditional way. we need to create a browser window in order to view our UI.for that we can use &lt;code&gt;BrowserWindow&lt;/code&gt; from electron.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Create your &lt;code&gt;index.html&lt;/code&gt; based on your preferences or you can use my &lt;code&gt;index.html&lt;/code&gt; which i have created for the &lt;code&gt;life-calendar-widget&lt;/code&gt;.This project requires you to answer few questions which was made by referencing and combining various concepts and techniques which we will discuss in detail later in the upcoming logs&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Life calendar widget project log1</title>
       <link>https://kenwolverine1.github.io/posts/life_calendar_widget_project_log1/</link>
