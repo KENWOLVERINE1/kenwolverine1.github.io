@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Insightful on Kenwolverine</title>
+    <link>https://kenwolverine1.github.io/tags/insightful/</link>
+    <description>Recent content in Insightful on Kenwolverine</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2025 12:32:45 +0530</lastBuildDate>
+    <atom:link href="https://kenwolverine1.github.io/tags/insightful/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Life calendar widget log3</title>
+      <link>https://kenwolverine1.github.io/posts/life_calendar_widget_log3/</link>
+      <pubDate>Tue, 06 May 2025 12:32:45 +0530</pubDate>
+      <guid>https://kenwolverine1.github.io/posts/life_calendar_widget_log3/</guid>
+      <description>&lt;h2 id=&#34;log-3-&#34;&gt;log 3:-&lt;/h2&gt;
+&lt;p&gt;I was facing an error when I run my electron app which displays &lt;code&gt;object Nodelist&lt;/code&gt; instead of the actual value recieved from the input of the form. It turns out that since i am using &lt;code&gt;getElementsbyName&lt;/code&gt; which will return node list instead of the object&lt;/p&gt;
+&lt;p&gt;solved the error by adding index value to the nodelist&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementsbyName&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;age&amp;#39;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;but when I tried to use &lt;code&gt;getElementbyId&lt;/code&gt; the electron app does nothing and I need to find out why because when I use &lt;code&gt;getElementsbyName&lt;/code&gt; it works as expected without errors.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
