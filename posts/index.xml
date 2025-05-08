@@ -6,8 +6,18 @@
     <description>Recent content in Posts on Kenwolverine</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 May 2025 12:32:45 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 08 May 2025 10:42:02 +0530</lastBuildDate>
     <atom:link href="https://kenwolverine1.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Life calendar widget log4</title>
+      <link>https://kenwolverine1.github.io/posts/life_calendar_widget_log4/</link>
+      <pubDate>Thu, 08 May 2025 10:42:02 +0530</pubDate>
+      <guid>https://kenwolverine1.github.io/posts/life_calendar_widget_log4/</guid>
+      <description>&lt;h2 id=&#34;log-4-&#34;&gt;log 4:-&lt;/h2&gt;
+&lt;h2 id=&#34;bundling-the-project-as-a-distributable-&#34;&gt;Bundling the project as a distributable:-&lt;/h2&gt;
+&lt;p&gt;Now electron doesn&amp;rsquo;t have any tools for packaging and bundling in it&amp;rsquo;s default core modules so, we need to install additional tools to create a packaged app that we can distribute to users either as a installer(MSI on windows) or portable executable file(.app on mac os) or as packages(snap,RPM,deb for multiple linux environments)&lt;/p&gt;
+&lt;p&gt;There are two ways to build the electron application by using &lt;code&gt;electron-forge&lt;/code&gt; and &lt;code&gt;electron-builder&lt;/code&gt;. I am going to use &lt;code&gt;electron-forge&lt;/code&gt; since it is easy to create a bundle and it&amp;rsquo;s is used in the official Docs but feel free to use what you prefer.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Life calendar widget log3</title>
       <link>https://kenwolverine1.github.io/posts/life_calendar_widget_log3/</link>
