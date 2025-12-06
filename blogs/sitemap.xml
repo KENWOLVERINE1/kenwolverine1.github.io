@@ -2,34 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blogs/categories/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/tags/docker/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/tags/docker/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/docker_tie/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/posts/docker_tie/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/tags/dsa/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/tags/insightful/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/dsa/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/tags/insightful/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_log2/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_log3/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/life_calendar_widget_log2/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_log4/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/life_calendar_widget_log3/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_project_log1/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/life_calendar_widget_log4/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/posts/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/life_calendar_widget_project_log1/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/tags/resources/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/posts/os_concepts/</loc>
-  </url><url>
-    <loc>http://localhost:1313/blogs/posts/</loc>
-  </url><url>
-    <loc>http://localhost:1313/blogs/tags/resources/</loc>
-  </url><url>
-    <loc>http://localhost:1313/blogs/tags/</loc>
+    <loc>https://kenwolverine1.github.io/blogs/tags/</loc>
   </url>
 </urlset>
