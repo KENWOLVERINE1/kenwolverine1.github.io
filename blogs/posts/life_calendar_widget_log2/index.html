@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/blogs/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blogs/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Life calendar widget log2 | Kenwolverine</title>
+<meta name="keywords" content="">
+<meta name="description" content="log 2:-
+Configuring UI(User Interface):-
+
+The User Interface in electron works just like any other websites but in a more traditional way. we need to create a browser window in order to view our UI.for that we can use BrowserWindow from electron.
+
+Create your index.html based on your preferences or you can use my index.html which i have created for the life-calendar-widget.This project requires you to answer few questions which was made by referencing and combining various concepts and techniques which we will discuss in detail later in the upcoming logs">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/blogs/posts/life_calendar_widget_log2/">
+<link crossorigin="anonymous" href="http://localhost:1313/blogs/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/blogs/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/blogs/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/blogs/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/blogs/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/blogs/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blogs/posts/life_calendar_widget_log2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/blogs/" accesskey="h" title="Kenwolverine (Alt + H)">Kenwolverine</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Life calendar widget log2
+    </h1>
+    <div class="post-meta"><span>3 min</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="log-2-">log 2:-<a hidden class="anchor" aria-hidden="true" href="#log-2-">#</a></h2>
+<h2 id="configuring-uiuser-interface-">Configuring UI(User Interface):-<a hidden class="anchor" aria-hidden="true" href="#configuring-uiuser-interface-">#</a></h2>
+<ol>
+<li>The User Interface in electron works just like any other websites but in a more traditional way. we need to create a browser window in order to view our UI.for that we can use <code>BrowserWindow</code> from electron.</li>
+</ol>
+<p>Create your <code>index.html</code> based on your preferences or you can use my <code>index.html</code> which i have created for the <code>life-calendar-widget</code>.This project requires you to answer few questions which was made by referencing and combining various concepts and techniques which we will discuss in detail later in the upcoming logs</p>
+<blockquote>
+<p><strong>Note</strong>: You can use <code>React</code> or any other <code>Frameworks</code> to create your <code>UI</code> because electron uses <code>Nodejs</code> so, it supports everything that can be used by <code>Node</code></p>
+</blockquote>
+<p>Rigth now I will give you an overview of the concepts that are used to create this project. I have used the <code>Memento Mori Framework</code>,<code>identity based habits</code> from <code>atomic habits</code> and <code>daily system goals</code> as the base logic for this project</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Life Calendar Widget&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">center</span>&gt;&lt;<span style="color:#f92672">h1</span>&gt;Life Calendar Widget&lt;/<span style="color:#f92672">h1</span>&gt;&lt;/<span style="color:#f92672">center</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">hr</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!--&lt;div id=&#34;display&#34;&gt;&lt;/div&gt;--&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;h2&#34;</span>&gt;Answer the questions asked below to get your life calender &lt;<span style="color:#f92672">3</span><span style="color:#960050;background-color:#1e0010">&lt;/</span><span style="color:#a6e22e">h2</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;age&#34;</span>&gt;1. Enter your Age&lt;/<span style="color:#f92672">label</span>&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;age&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;age&#34;</span>&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine&#34;</span>&gt;2. Let&#39;s create your identity line&lt;/<span style="color:#f92672">label</span>&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine1&#34;</span>&gt;I am the kind of person who&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine1&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine1&#34;</span>&gt;&lt;/<span style="color:#f92672">label</span>&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine2&#34;</span>&gt;Because I value&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine2&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine2&#34;</span>/&gt;&lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine3&#34;</span>&gt;want to become &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine3&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identityLine3&#34;</span>/&gt;&lt;/<span style="color:#f92672">label</span>&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;timeofday&#34;</span>&gt;3. What time of day are you sharpest(mornign/afternoon/evening)?&lt;/<span style="color:#f92672">label</span>&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;timeofday&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;timeofday&#34;</span>/&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal&#34;</span>&gt;4. What is your #1 goal right now (e.g.build a business,get fit,learn a skill)?&lt;/<span style="color:#f92672">label</span>&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;goal&#34;</span>/&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;timecommit&#34;</span>&gt;5. How much time can you commit daily (Even 1 hour is enough)&lt;/<span style="color:#f92672">label</span>&gt;&lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;timecommit&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;timecommit&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">br</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">center</span>&gt;&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lifechartdisplay()&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;Get Calendar&lt;/<span style="color:#f92672">button</span>&gt;&lt;/<span style="color:#f92672">center</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;index.css&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./renderer.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><blockquote>
+<p><strong>Note</strong>: The <code>style sheet(CSS)</code> is required to achieve the exact result that is provided by the life-calendar-widget App or you can use <code>Bootstrap</code>,<code>SCSS </code>,<code>SASS</code> or <code>TailwindCSS</code> based on your preference</p>
+</blockquote>
+<ol start="2">
+<li>In order to display the UI we need to configure <code>main.js</code>.first we need to import the required modules from electron</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">app</span>, <span style="color:#a6e22e">BrowserWindow</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;electron&#34;</span>)
+</span></span></code></pre></div><p>next we need to create a <code>BrowserWindow</code> for our App</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">createWindow</span><span style="color:#f92672">=</span>()=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">win</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">BrowserWindow</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span><span style="color:#ae81ff">850</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">height</span><span style="color:#f92672">:</span><span style="color:#ae81ff">850</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">maxWidth</span><span style="color:#f92672">:</span><span style="color:#ae81ff">850</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">maxHeight</span><span style="color:#f92672">:</span><span style="color:#ae81ff">850</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">minWidth</span><span style="color:#f92672">:</span><span style="color:#ae81ff">450</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">minHeigth</span><span style="color:#f92672">:</span><span style="color:#ae81ff">500</span>
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">win</span>.<span style="color:#a6e22e">loadFile</span>(<span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">index</span>.<span style="color:#a6e22e">html</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Once our <code>BrowserWindow</code> is ready we need to call the <code>createWindow</code> function to implement it</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">whenReady</span>().<span style="color:#a6e22e">then</span>((=&gt;{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">createWindow</span>()
+</span></span><span style="display:flex;"><span>}))
+</span></span></code></pre></div><p>These are the basic configurations that we need to run the electron app in our desktop</p>
+<ol start="3">
+<li>Since I am using Traditional web development methods I need to create a <code>Javascript</code> file for the functionality of the App</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>touch renderer.js
+</span></span></code></pre></div><p>The name of the file can be anything according to your preferences but the logic file is named as <code>renderer.js</code> in the electron <code>docs</code> so i am following the same</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/blogs/">Kenwolverine</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
