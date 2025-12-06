@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DSA on Kenwolverine</title>
+    <link>http://localhost:1313/blogs/tags/dsa/</link>
+    <description>Recent content in DSA on Kenwolverine</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/blogs/tags/dsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA Prep&#43;tips&#43;exp</title>
+      <link>http://localhost:1313/blogs/posts/dsa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/posts/dsa/</guid>
+      <description>&lt;h1 id=&#34;data-structures-&#34;&gt;Data Structures:-&lt;/h1&gt;
+&lt;p&gt;According to me data structures are type of data storing methods or containers which is used to store, organise, retrieve and manipulate data efficiently. I mean a computer can do the job even though the data&amp;rsquo;s are not stored efficiently and the tasks will be finished no matter what.but, if you think from a business perspective which focuses on customer satisfaction and one of the ways to achieve them is by giving them instant results. think of yourself as a customer and you are searching a product in amazon what happens if it takes more time to give you the results you feel many emotions and thoughts which might depend on the person and the situation but the point is it creates a friction between you and the product which makes you choose the better thing compared to that right. even though the results will be showed to you eventually no matter what without considering the external factors such as no internet, server down etc&amp;hellip; you get the point right.so this is where data sturctures come into play and it is important for a developer to know when to use which data structure to be efficient and reliable.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

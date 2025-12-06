@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Docker on Kenwolverine</title>
-    <link>https://kenwolverine1.github.io/blogs/tags/docker/</link>
+    <link>http://localhost:1313/blogs/tags/docker/</link>
     <description>Recent content in Docker on Kenwolverine</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <atom:link href="https://kenwolverine1.github.io/blogs/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blogs/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Tutorials&#43;Insights&#43;Exp</title>
-      <link>https://kenwolverine1.github.io/blogs/posts/docker_tie/</link>
+      <link>http://localhost:1313/blogs/posts/docker_tie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kenwolverine1.github.io/blogs/posts/docker_tie/</guid>
+      <guid>http://localhost:1313/blogs/posts/docker_tie/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: I am not going to say the same things that are said in the documentations but i am going to share what i learnt and understood about it along with insights and experiences as the tittle suggests and things that are related to the environment is based on &lt;code&gt;fedora 41&lt;/code&gt; only because that&amp;rsquo;s what i use :&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;

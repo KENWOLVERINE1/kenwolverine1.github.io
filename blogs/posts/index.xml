@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Kenwolverine</title>
-    <link>https://kenwolverine1.github.io/blogs/posts/</link>
+    <link>http://localhost:1313/blogs/posts/</link>
     <description>Recent content in Posts on Kenwolverine</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <atom:link href="https://kenwolverine1.github.io/blogs/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blogs/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Tutorials&#43;Insights&#43;Exp</title>
-      <link>https://kenwolverine1.github.io/blogs/posts/docker_tie/</link>
+      <link>http://localhost:1313/blogs/posts/docker_tie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kenwolverine1.github.io/blogs/posts/docker_tie/</guid>
+      <guid>http://localhost:1313/blogs/posts/docker_tie/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: I am not going to say the same things that are said in the documentations but i am going to share what i learnt and understood about it along with insights and experiences as the tittle suggests and things that are related to the environment is based on &lt;code&gt;fedora 41&lt;/code&gt; only because that&amp;rsquo;s what i use :&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -19,10 +19,18 @@
 &lt;p&gt;Based on my understanding docker is used to solve one of the most important classic problem of the entire software community which is &amp;ldquo;It works on my computer without any errors but why doesn&amp;rsquo;t it work in your&amp;rsquo;s&amp;rdquo;. But if you ask me &amp;ldquo;does docker became famous for just solving that one particular problem&amp;rdquo;, I would say that it&amp;rsquo;s kind of a very big problem that was solved by docker which made it cool but it&amp;rsquo;s not the only problem it solves. Docker provides lot of other features which helps us seperate our code from the system thus enhancing security and efficiency and it also allows us to run multiple code at the same time but the cool part is each and every code runs on its own container without affecting each other. Let&amp;rsquo;s say you are fond of developing stuffs but you just have one system and you want ot run multiple projects but here&amp;rsquo;s the catch each project requires different versions of the same environment, now that&amp;rsquo;s a problem right ofcourse i know you can run in &lt;code&gt;virtual environments(VENV)&lt;/code&gt; if you are using &lt;code&gt;python&lt;/code&gt; and &lt;code&gt;nvm&lt;/code&gt; for &lt;code&gt;Nodejs&lt;/code&gt; and &lt;code&gt;jEnv&lt;/code&gt; for &lt;code&gt;java&lt;/code&gt; and so on.. but if you need strict isolation docker is your man, focussing on security and portability without affecting the performance.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Life calendar widget log2</title>
-      <link>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_log2/</link>
+      <title>DSA Prep&#43;tips&#43;exp</title>
+      <link>http://localhost:1313/blogs/posts/dsa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_log2/</guid>
+      <guid>http://localhost:1313/blogs/posts/dsa/</guid>
+      <description>&lt;h1 id=&#34;data-structures-&#34;&gt;Data Structures:-&lt;/h1&gt;
+&lt;p&gt;According to me data structures are type of data storing methods or containers which is used to store, organise, retrieve and manipulate data efficiently. I mean a computer can do the job even though the data&amp;rsquo;s are not stored efficiently and the tasks will be finished no matter what.but, if you think from a business perspective which focuses on customer satisfaction and one of the ways to achieve them is by giving them instant results. think of yourself as a customer and you are searching a product in amazon what happens if it takes more time to give you the results you feel many emotions and thoughts which might depend on the person and the situation but the point is it creates a friction between you and the product which makes you choose the better thing compared to that right. even though the results will be showed to you eventually no matter what without considering the external factors such as no internet, server down etc&amp;hellip; you get the point right.so this is where data sturctures come into play and it is important for a developer to know when to use which data structure to be efficient and reliable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Life calendar widget log2</title>
+      <link>http://localhost:1313/blogs/posts/life_calendar_widget_log2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/posts/life_calendar_widget_log2/</guid>
       <description>&lt;h2 id=&#34;log-2-&#34;&gt;log 2:-&lt;/h2&gt;
 &lt;h2 id=&#34;configuring-uiuser-interface-&#34;&gt;Configuring UI(User Interface):-&lt;/h2&gt;
 &lt;ol&gt;
@@ -32,9 +40,9 @@
     </item>
     <item>
       <title>Life calendar widget log3</title>
-      <link>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_log3/</link>
+      <link>http://localhost:1313/blogs/posts/life_calendar_widget_log3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_log3/</guid>
+      <guid>http://localhost:1313/blogs/posts/life_calendar_widget_log3/</guid>
       <description>&lt;h2 id=&#34;log-3-&#34;&gt;log 3:-&lt;/h2&gt;
 &lt;p&gt;I was facing an error when I run my electron app which displays &lt;code&gt;object Nodelist&lt;/code&gt; instead of the actual value recieved from the input of the form. It turns out that since i am using &lt;code&gt;getElementsbyName&lt;/code&gt; which will return node list instead of the object&lt;/p&gt;
 &lt;p&gt;solved the error by adding index value to the nodelist&lt;/p&gt;
@@ -43,9 +51,9 @@
     </item>
     <item>
       <title>Life calendar widget log4</title>
-      <link>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_log4/</link>
+      <link>http://localhost:1313/blogs/posts/life_calendar_widget_log4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_log4/</guid>
+      <guid>http://localhost:1313/blogs/posts/life_calendar_widget_log4/</guid>
       <description>&lt;h2 id=&#34;log-4-&#34;&gt;log 4:-&lt;/h2&gt;
 &lt;h2 id=&#34;bundling-the-project-as-a-distributable-&#34;&gt;Bundling the project as a distributable:-&lt;/h2&gt;
 &lt;p&gt;Now electron doesn&amp;rsquo;t have any tools for packaging and bundling in it&amp;rsquo;s default core modules so, we need to install additional tools to create a packaged app that we can distribute to users either as a installer(MSI on windows) or portable executable file(.app on mac os) or as packages(snap,RPM,deb for multiple linux environments)&lt;/p&gt;
@@ -53,14 +61,23 @@
     </item>
     <item>
       <title>Life calendar widget project log1</title>
-      <link>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_project_log1/</link>
+      <link>http://localhost:1313/blogs/posts/life_calendar_widget_project_log1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kenwolverine1.github.io/blogs/posts/life_calendar_widget_project_log1/</guid>
+      <guid>http://localhost:1313/blogs/posts/life_calendar_widget_project_log1/</guid>
       <description>&lt;h1 id=&#34;learning-log-&#34;&gt;Learning log!:-&lt;/h1&gt;
 &lt;p&gt;As the name suggests this is where i will log the learnings and experiences that i have obtained during the journey of creating this wonderful project so that evenyone can access not only my project but also the learnings and experiences as well!!&lt;/p&gt;
 &lt;h2 id=&#34;log-1-&#34;&gt;log 1:-&lt;/h2&gt;
 &lt;h2 id=&#34;setting-up-the-project-&#34;&gt;Setting up the project:-&lt;/h2&gt;
 &lt;p&gt;I initially started the project by creating a directory under the name life-caledar-widget. I usually create a directory based on the project name in order to initialize it locally and in order to keep track of it&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OS Concepts</title>
+      <link>http://localhost:1313/blogs/posts/os_concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/posts/os_concepts/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;OS also known as Operating System is a software which is used to control and allocate hardware and software resources efficiently. Most of the operating systems are written using C and C++. The kernal of the Operating System is mostly written in C.&lt;/p&gt;
+&lt;p&gt;The kernals of the OS&amp;rsquo;s are wrtten in C language because C allows you to access memory via poiters unlike other programming languages which hides memory access. C language allows you to directly manipulate hardware registers and memory addresses which makes it ideal to write memory managers and drivers. C language also compiles to machine code before runtime which makes it fast compared to other programming languages and it also allows inline assembly code which is sutable for CPU instructions.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
